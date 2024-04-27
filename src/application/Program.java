@@ -52,7 +52,7 @@ public class Program {
         int year = Integer.parseInt(monthAndYear.substring(3));
         System.out.printf("Nome: %s%n", worker.getName());
         System.out.printf("Departament: %s%n", departamentName);
-        System.out.printf("Income for 0%d/%d: %.2f%n", month, year, worker.income(month, year));
+        System.out.print("Income for " + monthAndYear + ": " + String.format("%.2f", worker.income(month, year)));
 
         scanner.close();
     }
